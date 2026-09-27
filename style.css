@@ -11,3 +11,24 @@
 .manifesto{padding:140px clamp(20px,4vw,64px)}.manifesto-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:90px}.manifesto h2{margin:0;font-size:clamp(55px,8vw,115px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase}.manifesto-grid>p{margin:0;max-width:580px;font-size:clamp(20px,2.2vw,31px);line-height:1.35;letter-spacing:-.04em}
 footer{padding:26px clamp(20px,4vw,64px);background:var(--red);color:#fff;display:flex;justify-content:space-between;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:900px){.product-grid{grid-template-columns:1fr}.tool-card{display:grid;grid-template-columns:1fr 1fr;border-right:0}.tool-visual{height:330px}}@media(max-width:760px){.site-header nav a:not(.nav-main){display:none}.hero-grid,.section-head,.manifesto-grid,.tool-card{grid-template-columns:1fr}.hero{min-height:780px}.hero-grid{gap:45px}.hero h1{font-size:clamp(58px,18vw,100px)}.section-head{gap:30px}.tool-visual{height:300px}.tool-info{min-height:280px;padding:32px 4px}.tool-info h3{margin-top:42px}.view{margin-top:20px}.manifesto-grid{gap:45px}footer{gap:20px;flex-direction:column}}
+
+/* Crio dark theme */
+:root{--paper:#0d0f14;--ink:#f4f4f2;--muted:#92959d;--line:#2a2d34;--red:#ed1c24}
+html,body{background:#0d0f14;color:#f4f4f2}
+.site-header{background:rgba(13,15,20,.96);border-color:#2a2d34}
+.brand,.site-header nav a{color:#f4f4f2}
+.nav-main{border-color:#555!important}
+.hero,.products,.manifesto{background:#0d0f14;color:#f4f4f2}
+.hero p,.tool-info p,.manifesto p{color:#9b9ea6}
+.product-grid{border-color:#2a2d34}
+.tool-card{border-color:#2a2d34;background:#0d0f14}
+.tool-card:hover{background:#12151b}
+.tool-visual{background:#151820}
+.tool-info{background:#0d0f14}
+.tag{border-color:#555;color:#f4f4f2}
+.tag.muted{color:#999}
+footer{background:#090b0f;color:#8d9098;border-color:#2a2d34}
+.product-page{background:#0d0f14;color:#f4f4f2}
+.facts,.fact{border-color:#2a2d34}
+.product-demo{background:#151820}
+.detail-grid p,.detail-grid li{color:#b1b3b8}
