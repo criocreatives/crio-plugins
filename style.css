@@ -210,3 +210,69 @@ footer{background:var(--charcoal);color:#B4B4B9;border-top:1px solid #27292c;pad
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
+
+
+/* Rail & Fence Tool — product launch presentation */
+.tool-visual--photo{background:#d5d5d0}
+.tool-visual--photo::before{display:none}
+.tool-visual--photo .card-product-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .4s ease}
+.tool-card:hover .tool-visual--photo .card-product-image{transform:scale(1.045)}
+.tool-visual--photo .product-number,.tool-visual--photo .visual-label{color:#22242a;text-shadow:0 1px 4px #d5d5d0}
+.rail-product .rail-product-hero h1{font-size:clamp(58px,8.7vw,136px);line-height:.89}
+.rail-hero-actions{display:flex;align-items:center;gap:29px;flex-wrap:wrap;margin-top:33px}
+.rail-button{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;background:var(--red);color:#fff;padding:15px 21px;font:700 11px/1.3 var(--body);text-transform:uppercase;letter-spacing:.08em;transition:background .2s,transform .2s}
+.rail-button:hover{background:#cb1620;transform:translateY(-2px)}
+.rail-hero-visual{margin-top:76px;background:#d5d5d0;border-radius:15px;overflow:hidden;border:1px solid var(--line)}
+.rail-hero-visual img{width:100%;max-height:660px;object-fit:contain;object-position:center}
+.rail-visual-credit{display:flex;justify-content:space-between;gap:20px;padding:15px 25px;background:#161719;color:#dbdcde;text-transform:uppercase;letter-spacing:.13em;font:700 10px/1.4 var(--body)}
+.rail-intro{display:grid;grid-template-columns:.6fr 1.5fr;gap:70px;padding:105px 0;border-bottom:1px solid var(--line)}
+.rail-intro h2,.rail-section-heading h2{font-size:clamp(40px,5.2vw,76px);line-height:1.05;margin:0;letter-spacing:-.06em}
+.rail-intro p:not(.eyebrow){font-size:clamp(17px,1.9vw,24px);line-height:1.55;max-width:850px;color:var(--muted);margin:28px 0 0}
+.rail-section-heading{display:grid;grid-template-columns:.6fr 1.5fr;gap:70px;align-items:start;margin-bottom:43px}
+.rail-section-heading>div>p{color:var(--muted);font-size:16px;line-height:1.65;margin:20px 0 0;max-width:690px}
+.rail-presets-section,.rail-capabilities,.rail-workflow{padding-top:105px}
+.rail-preset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.rail-preset{margin:0;min-width:0;border-radius:14px;overflow:hidden;border:1px solid rgba(9,9,9,.10);background:var(--surface);box-shadow:var(--raise)}
+.rail-preset>a{display:block;background:#d3d3cd;overflow:hidden;aspect-ratio:4/3}
+.rail-preset img{width:100%;height:100%;object-fit:contain;transition:transform .35s ease}
+.rail-preset a:hover img{transform:scale(1.05)}
+.rail-preset figcaption{display:flex;gap:18px;align-items:flex-start;padding:22px 23px 26px;min-height:132px}
+.rail-preset-num{color:var(--red);font:700 10px/1.6 var(--body)}
+.rail-preset figcaption strong{display:block;font:700 19px/1.16 var(--display);letter-spacing:-.035em;margin:0 0 9px}
+.rail-preset figcaption small{display:block;font:400 12px/1.55 var(--body);color:var(--muted)}
+.rail-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.rail-feature-grid article{padding:34px 30px 39px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rail-feature-grid article>span{display:block;color:var(--red);font:700 10px/1.6 var(--body);letter-spacing:.12em}
+.rail-feature-grid h3{font-size:clamp(23px,2.3vw,34px);line-height:1.1;margin:45px 0 14px}
+.rail-feature-grid p{margin:0;color:var(--muted);font:400 14px/1.75 var(--body)}
+.rail-workflow-steps{list-style:none;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:0}
+.rail-workflow-steps li{padding:26px 23px 30px;border:1px solid var(--line);border-radius:12px;box-shadow:var(--raise);display:flex;flex-direction:column;gap:48px;min-width:0}
+.rail-workflow-steps b{font:700 12px/1 var(--body);color:var(--red)}
+.rail-workflow-steps strong{display:block;font:700 22px/1.2 var(--display);letter-spacing:-.03em;margin-bottom:12px}
+.rail-workflow-steps small{display:block;font:400 13px/1.65 var(--body);color:var(--muted)}
+.rail-usage-note{margin-top:80px;padding:22px 27px;background:#e9e9e9;border-radius:12px;border:1px solid var(--line)}
+.rail-usage-note h3{font:700 14px/1.5 var(--display);letter-spacing:-.02em;margin:0 0 9px}
+.rail-usage-note p{margin:0;font:400 12px/1.7 var(--body);color:#5f6067}
+.rail-launch-panel p:not(.eyebrow){margin:17px 0 0;color:var(--muted);max-width:470px}
+@media(max-width:1100px){
+.rail-preset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rail-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rail-workflow-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+.rail-product .rail-product-hero h1{font-size:clamp(58px,12vw,96px)}
+.rail-section-heading,.rail-intro{grid-template-columns:1fr;gap:15px}
+.rail-intro{padding:72px 0}.rail-presets-section,.rail-capabilities,.rail-workflow{padding-top:72px}
+.rail-hero-visual{margin-top:54px}.rail-visual-credit{font-size:9px}
+.rail-preset-grid{gap:17px}.rail-feature-grid article{padding:26px 23px 32px}
+.rail-workflow-steps{gap:15px}
+}
+@media(max-width:520px){
+.rail-preset-grid,.rail-feature-grid,.rail-workflow-steps{grid-template-columns:1fr}
+.rail-hero-actions{gap:20px}
+.rail-product .rail-product-hero h1{font-size:clamp(55px,12.2vw,75px)}
+.rail-visual-credit span:last-child{display:none}
+.rail-preset figcaption{min-height:auto}
+.rail-feature-grid article h3{margin-top:28px}
+.rail-workflow-steps li{gap:25px}
+}
