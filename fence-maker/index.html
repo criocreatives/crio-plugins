@@ -1,28 +1,50 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Turn selected edges into procedural, editable fence runs with configurable styles, dimensions and materials."><title>Crio Fence Maker — Crio Plugins</title><link rel="stylesheet" href="/style.css?v=2"><link rel="icon" type="image/png" href="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20favicon.png"><style>
-.product-page{min-height:100vh;padding:80px clamp(20px,4vw,64px) 110px}
-.back{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.product-hero{margin-top:72px;display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:end}
-.product-hero h1{margin:18px 0 30px;font-size:clamp(58px,8vw,118px);line-height:.84;letter-spacing:-.07em;text-transform:uppercase}
-.lede{font-size:clamp(20px,2.1vw,29px);line-height:1.4;letter-spacing:-.03em;max-width:760px}
-.facts{border-top:1px solid var(--line);align-self:end}
-.fact{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;font-size:11px}
-.fact span{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:9px}
-.product-demo{margin-top:72px;min-height:410px;display:grid;place-items:center;padding:40px;text-align:center}
-.product-demo strong{font-size:clamp(35px,5vw,68px);letter-spacing:-.05em}
-.product-demo strong span{color:var(--red)}.product-demo p{color:var(--muted)}
-.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:72px}
-.detail-grid h2{margin:0;font-size:clamp(34px,4vw,54px);line-height:1.05;letter-spacing:-.05em}
-.detail-grid p,.detail-grid li{font-size:17px;line-height:1.65}.detail-grid ul{margin:0;padding-left:20px}
-@media(max-width:760px){.product-page{padding:56px 18px 82px}.product-hero,.detail-grid{grid-template-columns:1fr;gap:42px}.product-hero{margin-top:52px}.product-demo{min-height:320px;margin-top:56px}.detail-grid{margin-top:56px}}
-</style></head><body>
-<header class="site-header">
-  <a class="brand" href="/" aria-label="Crio Plugins home"><img class="header-logo" src="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20wide%20white.svg" alt="Crio Creatives"></a>
-  <nav><a href="/#plugins">Plugins</a><a href="/#about">About</a><a class="nav-main" href="https://criocreatives.com/">Crio Creatives ↗︎</a></nav>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Turn selected edges into procedural, editable fence runs with configurable styles, dimensions and materials.">
+<meta name="theme-color" content="#F4F4F4">
+<title>Crio Fence Maker — Crio Plugins</title>
+<link rel="icon" type="image/png" href="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20favicon.png">
+<link rel="stylesheet" href="/style.css?v=3">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Crio Plugins home"><img class="header-logo" src="https://criocreatives.com/assets/logos/Crio%20Creatives%20Logo%20wide%20white.svg" alt="Crio Creatives"><span class="brand-section">Plugins</span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="/#plugins">Plugins</a>
+      <a href="/#about">About</a>
+      <a class="nav-main" href="https://criocreatives.com/">Crio Creatives</a>
+    </nav>
+  </div>
 </header>
-<main class="product-page"><a class="back" href="/">← All plugins</a><div class="product-hero"><div><p class="eyebrow">SketchUp / 02</p><h1>Crio Fence<br><span>Maker.</span></h1><p class="lede">Turn selected edges into procedural, editable fence runs with configurable styles, dimensions and materials.</p></div><div class="facts"><div class="fact"><span>Platform</span><b>SketchUp</b></div><div class="fact"><span>Status</span><b>In development</b></div><div class="fact"><span>Developer</span><b>Crio Creatives</b></div></div></div>
-<div class="product-demo"><div><strong>Select edges.<br><span>Build fences.</span></strong><p>Development preview and release information coming soon.</p></div></div>
-<div class="detail-grid"><div><p class="eyebrow">The tool</p><h2>Procedural fences from the edges you already draw.</h2></div><div><ul><li>Build from selected SketchUp edges</li><li>11 quick fence-style options</li><li>Mixed-unit height and dimension input</li><li>Editable runs, materials, rails, infill and posts</li></ul></div></div></main>
-<footer><span>© 2026 Crio Creatives, LLC</span><a href="/">Crio Plugins ↗︎</a></footer>
-<!-- LibreCounter: privacy-friendly page analytics -->
+<main id="main" class="product-page">
+  <div class="frame">
+    <div class="product-topline"><a class="back" href="/#plugins">All plugins</a><span class="micro">Crio software / Product 02 of 03</span></div>
+    <section class="product-hero" aria-labelledby="product-title">
+      <div><p class="eyebrow">SketchUp / 02</p><h1 id="product-title">Crio Fence<br><span class="accent">Maker.</span></h1><p class="lede">Turn selected edges into procedural, editable fence runs with configurable styles, dimensions and materials.</p></div>
+      <dl class="facts"><div class="fact"><dt>Platform</dt><dd>SketchUp</dd></div><div class="fact"><dt>Status</dt><dd>In development</dd></div><div class="fact"><dt>Developer</dt><dd>Crio Creatives</dd></div></dl>
+    </section>
+    <section class="product-showcase" aria-label="Crio Fence Maker development preview">
+      <div class="showcase-illustration fence-visual"><span class="showcase-code">02 / FENCE MAKER</span><div class="fence-art"><i></i><i></i><i></i><i></i><b></b><b></b></div></div>
+      <div class="showcase-copy"><p class="eyebrow">Made for the workflow</p><h2>Select edges.<br><span class="accent">Build fences.</span></h2><p>Development preview and release information coming soon.</p><div class="release-pill">In development / SketchUp</div></div>
+    </section>
+    <section class="detail-grid" aria-labelledby="details-title">
+      <div><p class="eyebrow">The tool</p><h2 id="details-title">Procedural fences from the edges you already draw.</h2></div>
+      <ul class="feature-list"><li>Build from selected SketchUp edges</li><li>11 quick fence-style options</li><li>Mixed-unit height and dimension input</li><li>Editable runs, materials, rails, infill and posts</li></ul>
+    </section>
+    <section class="next-panel" aria-label="Explore Crio plugins">
+      <div><p class="eyebrow">Explore the collection</p><h2>More tools.<br>Less repetitive work.</h2></div>
+      <a class="inline-action" href="/#plugins">Browse all plugins</a>
+    </section>
+  </div>
+</main>
+<footer><div class="frame footer-inner"><a href="/" class="footer-wordmark" aria-label="Crio Plugins home">CRIO <i>/</i> PLUGINS</a><div class="footer-meta"><span>© 2026 Crio Creatives, LLC</span><a href="https://criocreatives.com/">Main website</a><a href="https://criocreatives.com/#contact">Contact</a></div></div></footer>
+<script src="/site.js?v=3"></script>
+<!-- LibreCounter analytics preserved -->
 <img src="https://librecounter.org/hidden.svg" referrerpolicy="unsafe-url" alt="" width="1" height="1" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">
 </body></html>
