@@ -223,7 +223,7 @@ footer{background:var(--charcoal);color:#B4B4B9;border-top:1px solid #27292c;pad
 .rail-button{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;background:var(--red);color:#fff;padding:15px 21px;font:700 11px/1.3 var(--body);text-transform:uppercase;letter-spacing:.08em;transition:background .2s,transform .2s}
 .rail-button:hover{background:#cb1620;transform:translateY(-2px)}
 .rail-hero-visual{margin-top:76px;background:#d5d5d0;border-radius:15px;overflow:hidden;border:1px solid var(--line)}
-.rail-hero-visual img{width:100%;max-height:660px;object-fit:contain;object-position:center}
+.rail-hero-visual img{display:block;width:100%;height:clamp(310px,45vw,600px);max-height:none;object-fit:cover;object-position:center}
 .rail-visual-credit{display:flex;justify-content:space-between;gap:20px;padding:15px 25px;background:#161719;color:#dbdcde;text-transform:uppercase;letter-spacing:.13em;font:700 10px/1.4 var(--body)}
 .rail-intro{display:grid;grid-template-columns:.6fr 1.5fr;gap:70px;padding:105px 0;border-bottom:1px solid var(--line)}
 .rail-intro h2,.rail-section-heading h2{font-size:clamp(40px,5.2vw,76px);line-height:1.05;margin:0;letter-spacing:-.06em}
@@ -260,7 +260,7 @@ footer{background:var(--charcoal);color:#B4B4B9;border-top:1px solid #27292c;pad
 .rail-product .rail-product-hero h1{font-size:clamp(58px,12vw,96px)}
 .rail-section-heading,.rail-intro{grid-template-columns:1fr;gap:15px}
 .rail-intro{padding:72px 0}.rail-presets-section,.rail-capabilities,.rail-workflow{padding-top:72px}
-.rail-hero-visual{margin-top:54px}.rail-visual-credit{font-size:9px}
+.rail-hero-visual{margin-top:40px}.rail-hero-visual img{height:clamp(190px,57vw,310px)}.rail-visual-credit{font-size:9px}
 .rail-preset-grid{gap:17px}.rail-feature-grid article{padding:26px 23px 32px}
 .rail-workflow-steps{gap:15px}
 }
