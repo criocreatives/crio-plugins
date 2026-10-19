@@ -318,3 +318,9 @@ footer{background:var(--charcoal);color:#B4B4B9;border-top:1px solid #27292c;pad
   .rail-panel-price{align-items:flex-start}
   .rail-purchase-panel-action .rail-button{width:100%}
 }
+
+/* Renamed Crio extension detail-page typography */
+.named-product .product-hero h1{font-size:clamp(62px,8.1vw,125px);line-height:.89}
+.stage-truss-product .product-hero h1{font-size:clamp(63px,7.8vw,119px)}
+@media(max-width:760px){.named-product .product-hero h1{font-size:clamp(54px,11vw,88px)}}
+@media(max-width:520px){.named-product .product-hero h1{font-size:clamp(50px,12.3vw,69px)}.stage-truss-product .product-hero h1{font-size:clamp(48px,12vw,67px)}}
