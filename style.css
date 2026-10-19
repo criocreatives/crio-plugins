@@ -273,3 +273,48 @@ footer{background:var(--charcoal);color:#B4B4B9;border-top:1px solid #27292c;pad
 .rail-feature-grid article h3{margin-top:28px}
 .rail-workflow-steps li{gap:25px}
 }
+/* Commerce / one-time purchase CTAs */
+.tool-card--available .tool-info{min-height:340px}
+.tool-card--available .tool-visual:focus-visible,.tool-card--available .tool-info a:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
+.tool-card--available .tool-info h3 a:hover,.tool-more:hover,.rail-existing-link:hover{color:var(--red)}
+.tool-purchase{margin-top:auto;padding-top:24px;display:grid;gap:13px}
+.tool-price{display:flex;align-items:center;gap:18px;padding-top:17px;border-top:1px solid var(--line)}
+.tool-price strong{font:700 clamp(27px,2.7vw,37px)/1 var(--display);letter-spacing:-.055em;white-space:nowrap}
+.tool-price span{font:700 10px/1.6 var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.045em}
+.tool-buy{width:100%;justify-content:space-between;gap:12px}
+.tool-more{font:700 11px/1.5 var(--body);text-decoration:underline;text-underline-offset:4px;align-self:flex-start}
+.hero-offer{display:flex;align-items:center;gap:21px;margin-top:31px}
+.hero-offer strong{font:700 clamp(36px,4.5vw,65px)/1 var(--display);letter-spacing:-.07em}
+.hero-offer span{border-left:1px solid var(--line);padding-left:21px;color:var(--muted);font:400 13px/1.65 var(--body)}
+.hero-offer span b{color:var(--ink)}
+.rail-purchase-note{font:400 12px/1.6 var(--body);color:var(--muted);margin:14px 0 0}
+.rail-mid-cta{display:flex;justify-content:space-between;align-items:end;gap:36px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin:103px 0 0;padding:40px 0 45px}
+.rail-mid-cta .eyebrow{margin:0 0 14px}
+.rail-mid-cta h2{font:700 clamp(39px,5vw,72px)/1.05 var(--display);letter-spacing:-.06em;margin:0}
+.rail-mid-cta p:not(.eyebrow){max-width:700px;font-size:15px;color:var(--muted);margin:18px 0 0}
+.rail-mid-cta .rail-button{flex-shrink:0}
+.rail-purchase-faq{padding-top:105px}
+.rail-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.rail-faq-grid article{padding:29px 32px 33px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rail-faq-grid h3{font-size:clamp(24px,2.35vw,33px);line-height:1.2;margin:0 0 12px}
+.rail-faq-grid p{color:var(--muted);font-size:14px;line-height:1.75;margin:0}
+.rail-faq-grid p strong{color:var(--ink)}
+.rail-purchase-panel{align-items:center}
+.rail-purchase-panel-action{display:flex;flex-direction:column;align-items:flex-end;gap:12px;min-width:230px}
+.rail-panel-price{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.rail-panel-price strong{font:700 clamp(33px,4vw,49px)/1 var(--display);letter-spacing:-.055em}
+.rail-panel-price small{font:700 10px/1.6 var(--body);letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.rail-purchase-panel-action .rail-button{min-width:225px}
+.rail-existing-link{font:700 10px/1.6 var(--body);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){
+  .rail-mid-cta{margin-top:72px;flex-direction:column;align-items:stretch;gap:26px}
+  .rail-mid-cta .rail-button{align-self:flex-start}
+  .rail-purchase-faq{padding-top:72px}
+}
+@media(max-width:520px){
+  .hero-offer{gap:12px}.hero-offer span{padding-left:12px;font-size:12px}
+  .rail-faq-grid{grid-template-columns:1fr}
+  .rail-purchase-panel-action{align-items:flex-start;width:100%}
+  .rail-panel-price{align-items:flex-start}
+  .rail-purchase-panel-action .rail-button{width:100%}
+}
