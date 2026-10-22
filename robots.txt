@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://plugins.criocreatives.com/sitemap.xml
